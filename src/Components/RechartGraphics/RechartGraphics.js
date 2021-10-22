@@ -9,12 +9,13 @@ import {
 } from "recharts";
 import styles from "./RechartGraphics.module.css";
 
-export default function RechartGraphics({ data, numberDate, allUserElem }) {
-
+export default function RechartGraphics({ data, numberDate, allUser }) {
+    let retation  = Math.round((allUser.realUser / allUser.registeredUsers) * 100) + '%'
   return (
     <>
+      <h2 className={styles.head}>Rolling Retention 7 day: {retation} </h2>
       <div className={styles.block}>
-        <span className={styles.el}>All users : {allUserElem.length}</span>
+        <span className={styles.el}>All users : {allUser.registeredUsers}</span>
         <span className={styles.el}>Days count : {numberDate}</span>
       </div>
       <LineChart

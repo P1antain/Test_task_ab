@@ -5,7 +5,8 @@ export const DefaultRedux = createSlice({
   initialState: {
     users: [],
     diagram: [],
-    allUserFromCount: []
+    registeredUsers: 0,
+    realUser: 0,
   },
   reducers: {
     getUser(state, action) {
@@ -27,15 +28,21 @@ export const DefaultRedux = createSlice({
         diagram: action.payload
       }
     },
-    allUserFromCount(state, action){
+    getRegisteredUsers(state, action){
       return{
         ...state,
-        allUserFromCount: action.payload
+        registeredUsers: action.payload
+      }
+    },
+    getRealUser(state, action){
+      return{
+        ...state,
+        realUser: action.payload
       }
     }
   },
 });
 
-export const { getUser, newUser , getDiagram, allUserFromCount} = DefaultRedux.actions;
+export const { getUser, newUser , getDiagram, getRegisteredUsers, getRealUser} = DefaultRedux.actions;
 
 export default DefaultRedux.reducer;
