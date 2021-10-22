@@ -17,7 +17,7 @@ function App() {
       <div className={styles.main}>
         <CreateUser sendUserData={sendUserData} />
         <UserLists users={users} />
-        <WorkingData users={users}/>
+        <WorkingData users={users} />
       </div>
     </>
   );

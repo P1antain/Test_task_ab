@@ -1,15 +1,15 @@
 :root {
   --color-black: #000;
-  --item-color: #3C5AA8;
-  --text-color: #5D6E97;
-  --btn-background: #4A9DFF;
-  --theme-color: #F9F9F9;
-  --white: #ffffff
+  --item-color: #3c5aa8;
+  --text-color: #5d6e97;
+  --btn-background: #4a9dff;
+  --theme-color: #f9f9f9;
+  --white: #ffffff;
 }
 #root {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  font-family: 'Ubuntu', sans-serif;
+  min-height: 100vh;
+  font-family: "Ubuntu", sans-serif;
   background-color: var(--theme-color);
 }

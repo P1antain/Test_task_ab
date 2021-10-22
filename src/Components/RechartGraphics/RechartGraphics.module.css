@@ -1,0 +1,12 @@
+.block {
+  display: flex;
+  justify-content: space-around;
+}
+.el {
+  padding: 5px;
+  font-size: 18px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--item-color);
+  opacity: 0.4;
+}
