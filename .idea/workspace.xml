@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5acda408-f66a-48fa-acce-3de7b88b09fb" name="Changes" comment="new functional&gt; git page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/controllers/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/controllers/card.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/Api/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Api/Api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +29,23 @@
     <property name="settings.editor.selected.configurable" value="MTHome" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,7 +58,7 @@
       <workItem from="1635155376015" duration="423000" />
       <workItem from="1635157363698" duration="660000" />
       <workItem from="1635159554120" duration="629000" />
-      <workItem from="1635161019653" duration="22000" />
+      <workItem from="1635161019653" duration="437000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and add backend">
       <created>1635154570960</created>
@@ -73,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635157426116</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new functional&gt; git page">
+      <created>1635161069324</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1635161069324</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
