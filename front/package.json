@@ -1,8 +1,8 @@
 {
+  "homepage": "https://P1antain.github.io/Test_task_ab",
   "name": "test_task",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/P1antain/Test_task_ab",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^4.2.4",
