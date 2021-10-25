@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5acda408-f66a-48fa-acce-3de7b88b09fb" name="Changes" comment="refactoring delete">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/Components/User/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Components/User/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +69,7 @@
       <workItem from="1635157363698" duration="660000" />
       <workItem from="1635159554120" duration="629000" />
       <workItem from="1635161019653" duration="2300000" />
+      <workItem from="1635171845792" duration="148000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and add backend">
       <created>1635154570960</created>
