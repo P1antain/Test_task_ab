@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5acda408-f66a-48fa-acce-3de7b88b09fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/controllers/card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/models/card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/routes/card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/Api/Api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test_task_redux_new.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/Components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/Components/RechartGraphics/RechartGraphics.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Components/RechartGraphics/RechartGraphics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/Components/RechartGraphics/RechartGraphics.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Components/RechartGraphics/RechartGraphics.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/Components/UserLists/UserLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Components/UserLists/UserLists.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/Components/UserLists/UserLists.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Components/UserLists/UserLists.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/Components/WorkingData/WorkingData.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Components/WorkingData/WorkingData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/Redux/defaultRedux.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Redux/defaultRedux.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="5acda408-f66a-48fa-acce-3de7b88b09fb" name="Changes" comment="Refactoring and add backend" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,8 +34,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635153579897</updated>
-      <workItem from="1635153582403" duration="816000" />
+      <workItem from="1635153582403" duration="1196000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactoring and add backend">
+      <created>1635154570960</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635154570960</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,5 +59,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactoring and add backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring and add backend" />
   </component>
 </project>
