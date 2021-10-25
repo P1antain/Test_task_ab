@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const interfaceApi = axios.create({
-  baseURL: "http://localhost:3000/",
+  baseURL: "http://p1antain.api.nomoredomains.club/",
   headers: {
     "Content-Type": "application/json",
   },

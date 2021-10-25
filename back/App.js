@@ -6,7 +6,10 @@ const cors = require('cors')
 const { PORT = 3000, BASE_PATH } = process.env;
 const app = express();
 
-app.use(cors())
+app.use(cors({
+    origin: true,
+    exposedHeaders: '*',
+}))
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
