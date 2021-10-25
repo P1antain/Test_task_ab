@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5acda408-f66a-48fa-acce-3de7b88b09fb" name="Changes" comment="new functional&gt; git page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,7 @@
       <updated>1635153579897</updated>
       <workItem from="1635153582403" duration="1196000" />
       <workItem from="1635155376015" duration="423000" />
+      <workItem from="1635157363698" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and add backend">
       <created>1635154570960</created>
