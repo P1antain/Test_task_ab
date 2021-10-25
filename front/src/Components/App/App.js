@@ -24,9 +24,9 @@ function App() {
   const deleteData = () => {
     settingApi.deleteUserApi().then(() => {
       console.log("Deletion completed");
+      settingApi.getUserApi().then((data) => dispatch(getUser(data.data.data)));
     });
   };
-  console.log(users);
   return (
     <>
       <div className={styles.main}>

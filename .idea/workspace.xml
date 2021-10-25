@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5acda408-f66a-48fa-acce-3de7b88b09fb" name="Changes" comment="new functional&gt; git page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/Api/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Api/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/Components/App/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +29,7 @@
     <property name="settings.editor.selected.configurable" value="MTHome" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
     <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/front/package.json" />
       <command value="run" />
@@ -40,8 +40,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.deploy" />
       </list>
     </recent_temporary>
@@ -58,7 +69,7 @@
       <workItem from="1635155376015" duration="423000" />
       <workItem from="1635157363698" duration="660000" />
       <workItem from="1635159554120" duration="629000" />
-      <workItem from="1635161019653" duration="437000" />
+      <workItem from="1635161019653" duration="1516000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring and add backend">
       <created>1635154570960</created>
@@ -95,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635161069324</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new functional&gt; git page">
+      <created>1635161479961</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635161479961</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
