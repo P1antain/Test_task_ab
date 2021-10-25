@@ -19,6 +19,7 @@ export default function RechartGraphics({ data, numberDate, allUser }) {
       </h2>
       <div className={styles.block}>
         <span className={styles.el}>All users : {allUser.registeredUsers}</span>
+          <span className={styles.el}>Real users : {allUser.realUser}</span>
         <span className={styles.el}>Days count : {numberDate}</span>
       </div>
       <LineChart
