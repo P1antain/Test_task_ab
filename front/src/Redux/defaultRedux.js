@@ -16,33 +16,34 @@ export const DefaultRedux = createSlice({
       };
     },
     newUser(state, action) {
-      const initialId = state.users.length
+      const initialId = state.users.length;
       state.users.push({
         id: initialId + 1,
         data: action.payload,
       });
     },
-    getDiagram(state, action){
-      return{
+    getDiagram(state, action) {
+      return {
         ...state,
-        diagram: action.payload
-      }
+        diagram: action.payload,
+      };
     },
-    getRegisteredUsers(state, action){
-      return{
+    getRegisteredUsers(state, action) {
+      return {
         ...state,
-        registeredUsers: action.payload
-      }
+        registeredUsers: action.payload,
+      };
     },
-    getRealUser(state, action){
-      return{
+    getRealUser(state, action) {
+      return {
         ...state,
-        realUser: action.payload
-      }
-    }
+        realUser: action.payload,
+      };
+    },
   },
 });
 
-export const { getUser, newUser , getDiagram, getRegisteredUsers, getRealUser} = DefaultRedux.actions;
+export const { getUser, newUser, getDiagram, getRegisteredUsers, getRealUser } =
+  DefaultRedux.actions;
 
 export default DefaultRedux.reducer;

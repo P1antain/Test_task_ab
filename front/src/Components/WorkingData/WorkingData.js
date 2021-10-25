@@ -8,7 +8,7 @@ import {
 } from "../../Redux/defaultRedux";
 import RechartGraphics from "../RechartGraphics/RechartGraphics";
 
-export default function WorkingData({ users }) {
+export default function WorkingData({ users, saveData, deleteData }) {
   const dispatch = useDispatch();
   const diagram = useSelector((state) => state.default.diagram);
   const allUser = useSelector((state) => state.default);
@@ -59,11 +59,15 @@ export default function WorkingData({ users }) {
       {users.length > 0 && (
         <>
           <div className={styles.block}>
-            <button className={styles.btn}>Save</button>
+            <button className={styles.btn} onClick={saveData}>
+              Save
+            </button>
             <button className={styles.btn} onClick={calculate}>
               Calculate
             </button>
-            <button className={styles.btn}>Delete</button>
+            <button className={styles.btn} onClick={deleteData}>
+              Delete
+            </button>
           </div>
           <div className={styles.wrapper}>
             {diagram.length > 0 && (

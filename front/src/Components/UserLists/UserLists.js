@@ -19,7 +19,9 @@ export default function UserLists({ users }) {
           </>
         ) : (
           <>
-              <span className={styles.nothing}>Missing data, please add new users</span>
+            <span className={styles.nothing}>
+              Missing data, please add new users
+            </span>
           </>
         )}
       </ul>
