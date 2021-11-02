@@ -40,7 +40,7 @@ export default function RechartGraphics({ data, numberDate, allUser, dataRolling
         <Tooltip />
       </LineChart>
         <h2 className={styles.head}>
-            Rolling Retention {" "}
+            Rolling Retention 7 day {dataRolling[6].User} %{" "}
         </h2>
         <LineChart
             width={770}

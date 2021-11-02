@@ -2,7 +2,9 @@ import React from "react";
 import User from "../User/User";
 import styles from "./UserLists.module.css";
 
-export default function UserLists({ users }) {
+export default function UserLists({users }) {
+
+
   return (
     <>
       <ul className={styles.lists}>
