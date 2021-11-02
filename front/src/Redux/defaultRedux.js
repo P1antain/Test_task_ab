@@ -7,6 +7,7 @@ export const DefaultRedux = createSlice({
     diagram: [],
     registeredUsers: 0,
     realUser: 0,
+    rollingRetention:[]
   },
   reducers: {
     getUser(state, action) {
@@ -40,10 +41,16 @@ export const DefaultRedux = createSlice({
         realUser: action.payload,
       };
     },
+    getRollingRetention(state, action){
+      return{
+        ...state,
+        rollingRetention: action.payload
+      }
+    }
   },
 });
 
-export const { getUser, newUser, getDiagram, getRegisteredUsers, getRealUser } =
+export const { getUser, newUser, getDiagram, getRegisteredUsers, getRealUser, getRollingRetention } =
   DefaultRedux.actions;
 
 export default DefaultRedux.reducer;
