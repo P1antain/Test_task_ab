@@ -5,26 +5,35 @@ import {
   getRegisteredUsers,
   getDiagram,
   getRealUser,
+  getRollingRetention,
 } from "../../Redux/defaultRedux";
 import RechartGraphics from "../RechartGraphics/RechartGraphics";
 
 export default function WorkingData({ users, saveData, deleteData }) {
   const dispatch = useDispatch();
   const diagram = useSelector((state) => state.default.diagram);
+  const rollingRetention = useSelector(
+    (state) => state.default.rollingRetention
+  );
   const allUser = useSelector((state) => state.default);
   let numberDate = 7;
 
   const calculate = () => {
+    retention();
+    rollingRetentions();
+  };
+  const retention = () => {
     let item = [];
     let user = [];
     for (let i = 0; i < users.length; i++) {
-      let currentData = new Date();
-      let dataRef = new Date(users[i].data.dateRegister);
-      let dataAct = new Date(users[i].data.dateActive);
-      currentData.setDate(currentData.getDate() - numberDate);
-      if (dataAct >= currentData && dataRef >= currentData) {
+      let dataReg = users[i].data.dateRegister;
+      let dataAct = users[i].data.dateActive;
+      let newData = new Date();
+      newData.setDate(newData.getDate() - numberDate);
+      let currentData = newData.toISOString().slice(0, 10);
+      if (dataAct >= currentData && dataReg >= currentData) {
         item.push(users[i].data.dateActive);
-      } else if (dataAct < currentData && dataRef >= currentData) {
+      } else if (dataAct < currentData && dataReg >= currentData) {
         user.push(users[i]);
         console.log("Registration date is less than current date");
       }
@@ -36,12 +45,7 @@ export default function WorkingData({ users, saveData, deleteData }) {
       key[val] = (key[val] || 0) + 1;
       return key;
     }, {});
-    let res = Object.entries(count).map(([name, User]) => {
-      return {
-        name,
-        User,
-      };
-    });
+    let res = resResult(count);
     res.sort(function (a, b) {
       if (a.name > b.name) {
         return 1;
@@ -54,6 +58,78 @@ export default function WorkingData({ users, saveData, deleteData }) {
     dispatch(getDiagram(res));
   };
 
+  const rollingRetentions = () => {
+    let testResult = [];
+    for (let i = 0; i < 7; i++) {
+      testResult[i] = 0;
+    }
+    let res = resResult(testResult);
+
+    let data = users.map((m) => m.data);
+    for (let i = 0; i < data.length; i++) {
+      let dataReg = data[i].dateRegister;
+      let dataAct = data[i].dateActive;
+      let newData = new Date(dataReg);
+      newData.setDate(newData.getDate() + numberDate);
+      let currentData = newData.toISOString().slice(0, 10);
+      if (dataReg <= dataAct && dataAct < currentData) {
+        res[0].User++;
+        const value = new Date(dataReg);
+        if (value.setDate(value.getDate() + 1)) {
+          if(value.toISOString().slice(0, 10) === dataAct){
+            res[1].User++;
+          }
+        }
+        if (value.setDate(value.getDate() + 1)) {
+          if(value.toISOString().slice(0, 10) === dataAct){
+            res[2].User++;
+          }
+        }
+        if (value.setDate(value.getDate() + 1)) {
+          if(value.toISOString().slice(0, 10) === dataAct){
+            res[3].User++;
+          }
+        }
+        if (value.setDate(value.getDate() + 1)) {
+          if(value.toISOString().slice(0, 10) === dataAct){
+            res[4].User++;
+          }
+        }
+        if (value.setDate(value.getDate() + 1)) {
+          if(value.toISOString().slice(0, 10) === dataAct){
+            res[5].User++;
+          }
+        }
+        if (value.setDate(value.getDate() + 1)) {
+          if(value.toISOString().slice(0, 10) === dataAct){
+            res[6].User++;
+          }
+        }
+      } else {
+        for (let j = 0; j < res.length; j++) {
+          res[j].User++;
+        }
+      }
+    }
+  console.log(res)
+    let dataRolling = [];
+    for (let u = 0; u < res.length; u++) {
+      let userValues = res[0].User;
+      dataRolling.push(Math.round((res[u].User / userValues) * 100));
+    }
+    dataRolling = resResult(dataRolling);
+
+    dispatch(getRollingRetention(dataRolling));
+  };
+
+  function resResult(value) {
+    return Object.entries(value).map(([name, User]) => {
+      return {
+        name,
+        User,
+      };
+    });
+  }
   return (
     <>
       {users.length > 0 && (
@@ -70,9 +146,10 @@ export default function WorkingData({ users, saveData, deleteData }) {
             </button>
           </div>
           <div className={styles.wrapper}>
-            {diagram.length > 0 && (
+            {rollingRetention.length > 0 && (
               <RechartGraphics
                 data={diagram}
+                dataRolling={rollingRetention}
                 numberDate={numberDate}
                 allUser={allUser}
               />

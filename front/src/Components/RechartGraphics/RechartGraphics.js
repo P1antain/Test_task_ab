@@ -9,13 +9,13 @@ import {
 } from "recharts";
 import styles from "./RechartGraphics.module.css";
 
-export default function RechartGraphics({ data, numberDate, allUser }) {
+export default function RechartGraphics({ data, numberDate, allUser, dataRolling }) {
   let retention =
     Math.round((allUser.realUser / allUser.registeredUsers) * 100) + "%";
   return (
     <>
       <h2 className={styles.head}>
-        Rolling Retention {numberDate} day: {retention}{" "}
+        Retention {numberDate} day: {retention}{" "}
       </h2>
       <div className={styles.block}>
         <span className={styles.el}>All users : {allUser.registeredUsers}</span>
@@ -39,6 +39,26 @@ export default function RechartGraphics({ data, numberDate, allUser }) {
         <YAxis />
         <Tooltip />
       </LineChart>
+        <h2 className={styles.head}>
+            Rolling Retention 7 day {dataRolling[6].User} %{" "}
+        </h2>
+        <LineChart
+            width={770}
+            height={300}
+            data={dataRolling}
+            margin={{
+                top: 20,
+                right: 40,
+                bottom: 20,
+                left: 10,
+            }}
+        >
+            <Line type="monotone" dataKey="User" stroke="#8884d8" />
+            <CartesianGrid stroke="#ccc" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+        </LineChart>
     </>
   );
 }
