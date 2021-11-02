@@ -75,35 +75,41 @@ export default function WorkingData({ users, saveData, deleteData }) {
       if (dataReg <= dataAct && dataAct < currentData) {
         res[0].User++;
         const value = new Date(dataReg);
-        if (value.setDate(value.getDate() + 1)) {
-          if(value.toISOString().slice(0, 10) === dataAct){
-            res[1].User++;
-          }
+        if (
+          value.setDate(value.getDate() + 1) &&
+          value.toISOString().slice(0, 10) === dataAct
+        ) {
+          res[1].User++;
         }
-        if (value.setDate(value.getDate() + 1)) {
-          if(value.toISOString().slice(0, 10) === dataAct){
-            res[2].User++;
-          }
+        if (
+          value.setDate(value.getDate() + 1) &&
+          value.toISOString().slice(0, 10) === dataAct
+        ) {
+          res[2].User++;
         }
-        if (value.setDate(value.getDate() + 1)) {
-          if(value.toISOString().slice(0, 10) === dataAct){
-            res[3].User++;
-          }
+        if (
+          value.setDate(value.getDate() + 1) &&
+          value.toISOString().slice(0, 10) === dataAct
+        ) {
+          res[3].User++;
         }
-        if (value.setDate(value.getDate() + 1)) {
-          if(value.toISOString().slice(0, 10) === dataAct){
-            res[4].User++;
-          }
+        if (
+          value.setDate(value.getDate() + 1) &&
+          value.toISOString().slice(0, 10) === dataAct
+        ) {
+          res[4].User++;
         }
-        if (value.setDate(value.getDate() + 1)) {
-          if(value.toISOString().slice(0, 10) === dataAct){
-            res[5].User++;
-          }
+        if (
+          value.setDate(value.getDate() + 1) &&
+          value.toISOString().slice(0, 10) === dataAct
+        ) {
+          res[5].User++;
         }
-        if (value.setDate(value.getDate() + 1)) {
-          if(value.toISOString().slice(0, 10) === dataAct){
-            res[6].User++;
-          }
+        if (
+          value.setDate(value.getDate() + 1) &&
+          value.toISOString().slice(0, 10) === dataAct
+        ) {
+          res[6].User++;
         }
       } else {
         for (let j = 0; j < res.length; j++) {
@@ -111,7 +117,7 @@ export default function WorkingData({ users, saveData, deleteData }) {
         }
       }
     }
-  console.log(res)
+    console.log(res);
     let dataRolling = [];
     for (let u = 0; u < res.length; u++) {
       let userValues = res[0].User;
