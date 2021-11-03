@@ -111,7 +111,7 @@ export default function WorkingData({ users, saveData, deleteData }) {
         ) {
           res[6].User++;
         }
-      } else {
+      } else if(dataAct > currentData){
         for (let j = 0; j < res.length; j++) {
           res[j].User++;
         }
